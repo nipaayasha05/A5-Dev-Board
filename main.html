@@ -51,31 +51,50 @@
     <div class="collapse-title text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?
 
     </div>
-    <div class="collapse-content text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maiores cum aliquid alias consequatur fugit, itaque dolorem. Possimus officiis voluptatem dicta reprehenderit nemo, quasi quidem a, doloremque saepe quibusdam suscipit. </div>
+    <div class="collapse-content text-xl"><br>javascript এর সাহায্যে DOM থেকে বিভিন্নভাবে  select করা যায়।<br> <br>
+
+      1. (getElementById) এর সাহায্যে আমরা নির্দিষ্ট ID       নিয়ে কাজ করতে পারি।
+      <br><br>
+      
+      2. (getElementsByClassName) এর সাহায্যে একই সাথে  কিছু class নিয়ে কাজ করতে পারি যাদের class name same।
+      <br><br>
+      
+      3. (getElementsByTagName)  এর সাহায্যে html এর tag যেমন (span, p, div) নিয়ে কাজ করা যায়। <br><br>
+      
+      4. (querySelector) এর সাহায্যে tag, class,ID ইত্যাদি  সব কিছু নিয়েই কাজ করা যায়। তবে এটি first element নিয়ে কাজ করে। <br><br>
+      
+      5. (querySelectorAll) এর সাহায্যে tag, class, ID ইত্যাদি  সব কিছু নিয়ে  কাজ করা যায়। (querySelector) যেখানে first element নিয়ে কাজ করে সেখানে (querySelectorAll) চিন্হিত   অংশের সব elements নিয়ে কাজ করে। 
+       </div>
   </div>
   <div class="collapse bg-base-100 border border-base-300">
     <input type="radio" name="my-accordion-1" />
     <div class="collapse-title text-2xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
 
     
-    <div class="collapse-content text-xl  ">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    <div class="collapse-content text-xl  "><br>1. innerHTMl এর সাহায্যে সরাসরি coding এর মাধ্যমে  পরিবর্তন করা যায়।<br><br>
+      2. innerText শুধুমাত্র html এর tag এর ভিতরের text select করে।সেই অনুযায়ী পরির্তন করে।কোন text hide করা থাকলে তা নির্নয় করতে পারে না।<br><br>
+      3. innerContent শুধুমাত্র html এর tag এর ভিতরের text select করে।সেই অনুযায়ী পরির্তন করে।কোন text hide করা থাকলে তা নির্নয় করতে পারে এবং পরির্বতন ও করতে পারে।</div>
   </div>
   
   <div class="collapse bg-base-100 border border-base-300">
     <input type="radio" name="my-accordion-1" />
     <div class="collapse-title text-2xl font-semibold">Question-3: What is event delegation in the DOM?</div>
-    <div class="collapse-content text-xl">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+    <div class="collapse-content text-xl">Event Delegation হলো একটি parent element যে তার child element নিয়ে কাজ করে।event bubbling এর সাহায্যে child element থেকে parent element এ যাওয়া যায় । সেখানে event delegation এর সাহায্যে parent element এর মাধ্যমে child element এ access  করা যায়। এখানে Event Listener তুলনামূলক কম দরকার হয়।</div>
   </div>
   <div class="collapse bg-base-100 border border-base-300">
     <input type="radio" name="my-accordion-1" />
     <div class="collapse-title text-2xl font-semibold">Question-4: What is event bubbling in the DOM?</div>
-    <div class="collapse-content text-xl">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    <div class="collapse-content text-xl">Event Bubbling সবথেক নিচের অর্থাৎ child element নিয়ে কাজ করে।child element থেকে ধাপে ধাপে parent ,grandparent এর কাছে যায়। এখানে একই parent এর মধ্যে যে কয়েকটি child কে নিয়ে কাজ করবে সেই কয়েকটি child এর উপর Event Listener ব্যাবহার করতে হবে।  Event Bubbling বন্ধ করার জন্য stopPropagation() ব্যাবহার করতে  হয়।</div>
   </div>
   
   <div class="collapse bg-base-100 border border-base-300">
     <input type="radio" name="my-accordion-1" />
     <div class="collapse-title text-2xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
-    <div class="collapse-content text-xl">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+    <div class="collapse-content text-xl">Create Element : html এ কোনো element তৈরি করার জন্য document.createElement() ব্যবহার করা হয়।এক্ষেত্রে html tag (span ,div, p) ব্যবহার করা যায়। <br><br>
+
+      Add Element: html এ কোনো element যোগ করার জন্য appendChild() ব্যবহার হয়।এক্ষেত্রে html tag (span,div, p) ব্যবহার করা যায়। parent element এর সাথে নতুন element যোগ হয়।<br><br>
+      
+      Remove Element: html থেকে element মুছে ফেলতে remove(), removeChild() ব্যবহার হয়।removeChild() এ remove হওয়া element history  তে থাকে।কিন্তু remove() এ সব মুছে যায় </div>
   </div>
    
 </div>
