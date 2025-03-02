@@ -40,7 +40,7 @@ for(const btn of cardBtn){
    
  
     const titleBox = document.getElementById('title-box');
-        // const title = document.querySelectorAll('.title').innerText;
+         
         const div = document.createElement('div')
         div.classList.add( )
         div.innerHTML = `
