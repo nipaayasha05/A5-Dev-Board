@@ -35,7 +35,7 @@ for(const btn of cardBtn){
     console.log(sum);
     document.getElementById('checkout-number').innerText = sum;
 
- 
+      
  
    
  

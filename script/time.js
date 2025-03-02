@@ -1,8 +1,8 @@
 const date = new Date();
 const currentDate = date.toDateString();
 const currentTime = date.toLocaleTimeString();
- console.log(currentDate);
- console.log(currentTime);
+//  console.log(currentDate);
+//  console.log(currentTime);
   
 
  const calender =document.getElementById('calender');
